@@ -58,6 +58,8 @@ class Program
             {
                 Console.WriteLine("Thank you for using the Journal App!");
             }
+            //I exceeded the requirements by creating the DateTime.Now so that the user doesn't have to enter the date themseleves.
     }
+
     }
 }
