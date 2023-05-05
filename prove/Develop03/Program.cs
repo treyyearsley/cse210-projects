@@ -24,3 +24,5 @@ class Program
         Console.WriteLine("Thank you for using the scripture memorizing program!");
     }
 }
+// To exceed requirements with the help of Brother Lythgoe's video the program selects only words
+//that aren't previously hidden when hiding additonal words.
