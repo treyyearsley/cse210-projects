@@ -145,7 +145,7 @@ class Program
             {
                 Console.WriteLine("Thanks for using the Eternal Quest Program!");
             }
-        
+        // To make the program my own I added a getmotivation class that returns a motivational phrase.
 
     }
     }
