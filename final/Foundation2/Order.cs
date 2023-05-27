@@ -11,20 +11,20 @@ class Order
     public Order(Customer customer)
     {
         _customer = customer; 
-        _address = _customer.getAddy();
+        _address = _customer.getAddress();
 
     }
     public void shipLabel(Customer _customer)
     {
         
-        Console.WriteLine($"\n>>>Shipping Label:\n{_customer.getName()}\n{_customer.getAddy()}");
-        Console.WriteLine("--------------------\n");
+        Console.WriteLine($"Shipping Label:{_customer.getName()}\n{_customer.getAddress()}");
+        Console.WriteLine();
     
     }
 
     public void packLabel(List<Product> _products, Customer _customer)
     {
-        Console.WriteLine($"\n>>>Packing Label for: \n{_customer.getName()}");
+        Console.WriteLine($"Packing Label for: \n{_customer.getName()}");
 
         for(int x = 0; x < _products.Count; x++)
         {
@@ -32,12 +32,12 @@ class Order
             Console.WriteLine($"{name}");
 
         }
-        Console.WriteLine("--------------------\n");
+        Console.WriteLine();
     }
 
     public void totalBill(List<Product> _products, Customer _customer, Address _address)
     {
-        Console.WriteLine($"\n>>>Receipt for: \n{_customer.getName()}");
+        Console.WriteLine($"Receipt for: {_customer.getName()}");
         double total = 0;
         double ship = _address.inUS();
         total += ship;
@@ -50,7 +50,7 @@ class Order
         }
         Console.WriteLine($"Shipping: ${ship}");
         Console.WriteLine($"Total: ${total}");
-        Console.WriteLine("--------------------\n");
+        Console.WriteLine();
 
     }
 

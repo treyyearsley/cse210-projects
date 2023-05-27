@@ -19,7 +19,7 @@ class Customer
     {
         return $"{_customerName}";
     }
-    public string getAddy()
+    public string getAddress()
     {
         return $"{_addressstring}";
     }

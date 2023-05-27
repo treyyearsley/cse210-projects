@@ -25,7 +25,7 @@ public class Product
     }
     public string getProduct()
     {
-        return $"-- Product ID: {_productID}, item: {_productName}, quantity: {_quantity} ";
+        return $" Product ID: {_productID}, item: {_productName}, quantity: {_quantity} ";
     }
     public double totalCost()
     {
