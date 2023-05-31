@@ -42,7 +42,7 @@ class Swimming : Activity
     }
         public override string getSummary()
     {
-        string _summary = $"{_date}, {_activity} ({_minutes} minutes), Distance: {getDistance()} miles, Speed: {getSpeed()} MPH, Pace: {getPace()} minutes per mile.";
+        string _summary = $"{_date}, {_activity} Time: {_minutes} minutes, Distance: {getDistance()} miles, Speed: {getSpeed()} MPH, Pace: {getPace()} minutes per mile.";
         return _summary;
     }
 }
